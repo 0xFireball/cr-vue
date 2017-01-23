@@ -1,0 +1,13 @@
+name: cr-vue
+version: 0.1.0
+
+authors:
+  - 0xFireball <0xFireball@outlook.com>
+
+targets:
+  cr-vue:
+    main: src/cr-vue.cr
+
+crystal: 0.20.5
+
+license: MIT
