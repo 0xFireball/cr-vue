@@ -32,5 +32,12 @@ module.exports = merge(baseWebpackConfig, {
       inject: true
     }),
     new FriendlyErrors()
-  ]
+  ],
+  devServer: {
+    proxy: {
+      '/a': {
+        target: 'http://localhost:5000'
+      }
+    }
+  }
 })
