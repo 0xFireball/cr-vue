@@ -1,4 +1,5 @@
 require "kemal"
+require "./cr-vue/*"
 
 serve_static({"gzip" => true, "dir_listing" => true})
 public_folder("./client/dist")
