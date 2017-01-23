@@ -1,13 +1,10 @@
 require "kemal"
 
-get "/" do
-  render "client/dist/index.ecr"
-end
+serve_static({"gzip" => true, "dir_listing" => true})
+public_folder("./client/dist")
 
-# Creates a WebSocket handler.
-# Matches "ws://host:port/socket"
-ws "/socket" do |socket|
-  socket.send "Hello from Kemal!"
+get "/" do
+  render "client/dist/index.html.ecr"
 end
 
 Kemal.run(5000)
