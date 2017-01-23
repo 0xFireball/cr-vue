@@ -1,7 +1,7 @@
 require "kemal"
 
 get "/" do
-  "Hello World!"
+  render "client/dist/index.ecr"
 end
 
 # Creates a WebSocket handler.
