@@ -8,6 +8,11 @@ targets:
   cr-vue:
     main: src/cr-vue.cr
 
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+
 crystal: 0.20.5
 
 license: MIT
